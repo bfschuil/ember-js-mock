@@ -8,7 +8,7 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addAddonToProject({name:'ember-jshamcrest', target: '~0.3.0'}).then(() => {
+    return this.addAddonToProject({name:'ember-jshamcrest', target: 'https://github.com/bfschuil/ember-jshamcrest/tarball/dac2267aeadaa280475581464ed559149b00caae'}).then(() => {
       return this.addPackageToProject('js-mock', '~1.0.0');
     })
   }
